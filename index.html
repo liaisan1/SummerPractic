@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Модальное окно VK</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Кнопка для открытия модалки -->
+    <button class="vk-button" id="openModal">Открыть окно</button>
+
+    <!-- Само модальное окно -->
+    <div class="modal-overlay" id="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Подтверждение</h3>
+                <span class="close-btn">&times;</span>
+            </div>
+            <div class="modal-body">
+                <p>Вы уверены, что хотите выполнить это действие?</p>
+            </div>
+            <div class="modal-footer">
+                <button class="vk-button secondary">Отмена</button>
+                <button class="vk-button primary">Подтвердить</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

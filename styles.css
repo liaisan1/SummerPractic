@@ -1,0 +1,73 @@
+/* Основные стили VK */
+:root {
+    --vk-blue: #5181B8;
+    --vk-gray: #E5EBF1;
+    --vk-text: #222222;
+}
+
+.vk-button {
+    background-color: var(--vk-blue);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.vk-button.primary {
+    background-color: var(--vk-blue);
+}
+
+.vk-button.secondary {
+    background-color: var(--vk-gray);
+    color: #55677D;
+}
+
+/* Стили модального окна */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: white;
+    border-radius: 8px;
+    width: 400px;
+    max-width: 90%;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.modal-header {
+    padding: 15px 20px;
+    border-bottom: 1px solid #E7E8EC;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+.modal-footer {
+    padding: 15px 20px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    border-top: 1px solid #E7E8EC;
+}
+
+.close-btn {
+    font-size: 24px;
+    cursor: pointer;
+    color: #99A2AD;
+}
